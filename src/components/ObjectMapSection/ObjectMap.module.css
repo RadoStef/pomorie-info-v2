@@ -1,0 +1,21 @@
+.map-wrapper {
+    width: 100%;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:500px;
+}
+
+.gmap-canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:500px;
+}
+
+.gmap-iframe {
+    height:500px!important;
+}

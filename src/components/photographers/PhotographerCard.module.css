@@ -1,0 +1,57 @@
+.photographer-wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 200px 15%;
+    border-radius: 8px;
+    border: 1px solid #f1f1f1;
+}
+
+.photographer-logo-wrapper img {
+    margin-top: -75px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border: 2px dotted #4e4a4a;
+    border-radius: 50%;
+}
+
+.picture-gallery-wrapper {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-button {
+    height: 50px;
+    border: none;
+    background-color: seagreen;
+    padding: 15px;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.lightbox-button:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: all 0.7s;
+    color: black;
+}
+
+.slide-wrapper {
+    width: 96%;
+    overflow-x: auto;
+    background-color: seagreen;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+p {
+    margin-bottom: 10px;
+}

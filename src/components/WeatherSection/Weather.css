@@ -1,0 +1,6 @@
+.weather-wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,13 @@
+.extras-wrapper {
+    margin: 100px 0;
+    width: 85%;
+}
+
+ul li span {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+ul li {
+    padding-bottom: 10px;
+}

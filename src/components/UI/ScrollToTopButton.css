@@ -1,0 +1,100 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    background-color: #fbbc05;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+@media only screen and (max-width: 600px) {
+    .next-object-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 50%;
+        right: 10px;
+        background-color: #fbbc05;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        cursor: pointer;
+        z-index: 50;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .next-object-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 50%;
+        right: 50px;
+        background-color: #fbbc05;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        z-index: 50;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .previous-object-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 50%;
+        left: 10px;
+        background-color: #fbbc05;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        cursor: pointer;
+        z-index: 50;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .previous-object-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 50%;
+        left: 50px;
+        background-color: #fbbc05;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        z-index: 50;
+    }
+}
+
+.next-object-button:hover,
+.previous-object-button:hover {
+    background-color: coral;
+    transition: all 0.7s;
+}

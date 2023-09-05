@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #222;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
