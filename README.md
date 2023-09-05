@@ -2,13 +2,13 @@
 
 ---
 
-> This is the first React project code that I am sharing on my GitHub. This repo was created when the project was uploaded on server and got LIVE.
+> This is the first React project code that I am sharing on my GitHub. This repo is called v2 because there was some major updates made on the site structure.
 > .jpg pictures are NOT uploaded to GitHub, so if you want to download and start the project it would not work. Please check it here 👉 https://pomorie-info.com
 
 <ul>
   <li>❓ What was used to create this project?</li>
   <li>❗ Styling:  CSS, module.css, JSS (js in css to apply styles on some MUI components), sx prop for MUI inline styling</li>
-  <li>❗ Custom card elements ({children}), props, useState, useEffect, React Router </li>
+  <li>❗ Custom card elements ({children}), props, useState, useEffect, contextAPI, React Router </li>
   <li>❗ Third-party libraries like: Moment, Fslightbox-react, Material UI</li>
 </ul>
 
