@@ -16,6 +16,7 @@ import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PaidIcon from '@mui/icons-material/Paid';
 import Chip from '@mui/material/Chip';
+import LazyLoad from 'react-lazy-load';
 
 
 export const CityObjectCard = ({parkingsData}) => {
@@ -31,12 +32,14 @@ export const CityObjectCard = ({parkingsData}) => {
             <CardActionArea 
               sx={cardStyle}
               disableRipple>
-              <CardMedia
-                component="img"
-                sx={cardImageStyle}
-                image={parking.img}
-                alt={parking.name}
-              />
+              <LazyLoad>
+                <CardMedia
+                  component="img"
+                  sx={cardImageStyle}
+                  image={parking.img}
+                  alt={parking.name}
+                />
+              </LazyLoad>
               <CardContent sx={styles.cardContent}>
                 <Typography gutterBottom variant="h5" component="div">
                   {parking.name}

@@ -16,6 +16,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
+import LazyLoad from 'react-lazy-load';
 
 export const CityObjectCard = () => {
   const { landmarksData } = useCategoryData();
@@ -25,12 +26,14 @@ export const CityObjectCard = () => {
         return (
           <Card sx={styles.cityObjectCard} key={landmark.id}>
             <CardActionArea sx={cardStyle} disableRipple>
-              <CardMedia
-                component='img'
-                sx={cardImageStyle}
-                image={landmark.img}
-                alt={landmark.name}
-              />
+              <LazyLoad>
+                <CardMedia
+                  component='img'
+                  sx={cardImageStyle}
+                  image={landmark.img}
+                  alt={landmark.name}
+                />
+              </LazyLoad>
               <CardContent sx={styles.cardContent}>
                 <Typography gutterBottom variant='h5' component='div'>
                   {landmark.name}

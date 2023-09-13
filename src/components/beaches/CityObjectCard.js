@@ -16,6 +16,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import LazyLoad from 'react-lazy-load';
 
 export const CityObjectCard = () => {
   const {beachesData} = useCategoryData();
@@ -28,12 +29,14 @@ export const CityObjectCard = () => {
         return (
           <Card sx={styles.cityObjectCard} key={beaches.id}>
             <CardActionArea sx={cardStyle} disableRipple>
-              <CardMedia
-                component='img'
-                sx={cardImageStyle}
-                image={beaches.img}
-                alt={beaches.name}
-              />
+              <LazyLoad>
+                <CardMedia
+                  component='img'
+                  sx={cardImageStyle}
+                  image={beaches.img}
+                  alt={beaches.name}
+                />
+              </LazyLoad>
               <CardContent sx={styles.cardContent}>
                 <Typography gutterBottom variant='h5' component='div'>
                   {beaches.name}

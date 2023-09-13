@@ -16,6 +16,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import StarIcon from '@mui/icons-material/Star';
+import LazyLoad from 'react-lazy-load';
 
 export const CityObjectCard = () => {
   const { hotelsData } = useCategoryData();
@@ -30,7 +31,7 @@ export const CityObjectCard = () => {
         return (
           <Card sx={styles.cityObjectCard} key={hotel.id}>
             <CardActionArea sx={cardStyle} disableRipple>
-              <CardMedia component='img' sx={cardImageStyle} image={hotel.img} alt={hotel.name} />
+              <LazyLoad><CardMedia component='img' sx={cardImageStyle} image={hotel.img} alt={hotel.name} /></LazyLoad>
               <CardContent sx={styles.cardContent}>
                 <Typography gutterBottom variant='h5' component='div'>
                   {hotel.name} {hotel.star}

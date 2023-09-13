@@ -27,7 +27,7 @@ export const RootLayout = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className='App'>
+        <div>
           <AppHeaderBar />
           <WeatherInfo />
           <WelcomeSection />

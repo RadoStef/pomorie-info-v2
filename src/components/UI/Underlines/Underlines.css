@@ -1,0 +1,36 @@
+@media only screen and (max-width: 968px) {
+    .underline {
+        height: 3px;
+        width: 30%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 968px) {
+    .underline {
+        height: 5px;
+        width: 10%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+.pomorie-blue {
+    background-color: #4bbdff;
+}
+
+.pomorie-sun {
+    background-color: #fbbc05;
+}
+
+.pomorie-grass {
+    background-color: #34a853;
+}
+
+.sections_headers_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
