@@ -11,6 +11,7 @@ import { Button } from "@mui/material";
 import { Breadcrumb } from "../../components/BreadCrumbSection/Breadcrumb";
 import { LandmarksXtras } from '../../components/ObjectXtrasSection/LandmarksXtras';
 import { PreviousObject } from '../../components/UI/PreviousObject';
+import { NextObject } from '../../components/UI/NextObject';
 import lighthouse1 from '../../assets/landmarks/lighthouse/lighthouse.jpg';
 import lighthouse2 from '../../assets/landmarks/lighthouse/lighthouse1.jpg';
 import lighthouse3 from '../../assets/landmarks/lighthouse/lighthouse2.jpg';
@@ -47,6 +48,7 @@ export const LandmarkLighthouse = () => {
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
             <LandmarksXtras landmarksExtras={museumsXtras}/>
             <Link to='/landmark-harbor'><PreviousObject/></Link>
+            <Link to='/landmark-fountains'><NextObject/></Link>
             <MapSection map={mapContent}/>
         </ObjectDescriptionCard>
         <Footer/>

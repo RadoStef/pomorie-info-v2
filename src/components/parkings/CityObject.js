@@ -21,7 +21,7 @@ export const CityObject = () => {
 
     // Filter the parkings based on the selected option
     if (option === 'free') {
-      const filtered = parkingsData.filter(parking => parking.tag.includes('Буферен / Безплатен'));
+      const filtered = parkingsData.filter(parking => parking.tag.includes('Безплатен'));
       setFilteredParkings(filtered);
     } else if (option === 'private') {
       const filtered = parkingsData.filter(parking => parking.tag.includes('Частен / Платен'));

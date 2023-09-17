@@ -11,7 +11,6 @@ import { LightboxElement } from '../components/LightBoxSection/LightboxElement';
 import { Footer } from '../components/Footer/Footer';
 import { WelcomeText } from '../components/WelcomeSection/WelcomeText';
 import { DailyWeather } from '../components/WeatherSection/DailyWeather';
-import { ParkingsIframe } from '../components/ParkingsIframeSection/ParkingsIframe';
 
 export const RootLayout = () => {
   const title = `Информационен туристически портал на град Поморие.`;
@@ -33,7 +32,6 @@ export const RootLayout = () => {
           <WelcomeSection />
           <WelcomeText />
           <DailyWeather />
-          <ParkingsIframe/>
           <Categories />
           <FAQ />
           <ImageListElement />

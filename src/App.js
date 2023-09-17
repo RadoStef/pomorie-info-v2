@@ -72,6 +72,7 @@ import { ParkingBufferStGeorge } from './pages/Places/ParkingBufferStGeorge';
 import { ScrollToTopButton } from './components/UI/ScrollToTopButton';
 import NotFound from './components/UI/NotFound';
 import './App.css';
+import { LandmarkFountains } from './pages/Places/LandmarkFountains';
 
 const router = createBrowserRouter([
   // menu links
@@ -133,6 +134,7 @@ const router = createBrowserRouter([
   {path: 'landmark-boy', element: <LandmarkBoy/>},
   {path: 'landmark-harbor', element: <LandmarkHarbor/>},
   {path: 'landmark-lighthouse', element: <LandmarkLighthouse/>},
+  {path: 'landmark-fountains', element: <LandmarkFountains/>},
   // attractions
   {path: 'attraction-kuk', element: <AttractionKuk/>},
   {path: 'attraction-blackperl', element: <AttractionBlackperl/>},

@@ -5,7 +5,6 @@ import { ScrollToTopButton } from '../components/UI/ScrollToTopButton';
 import { Breadcrumb } from '../components/BreadCrumbSection/Breadcrumb';
 import { goToTop } from '../components/mock-data/data';
 import { Footer } from '../components/Footer/Footer';
-import { ParkingsIframe } from '../components/ParkingsIframeSection/ParkingsIframe';
 import { MoreAboutParkings } from '../components/ParkingsIframeSection/MoreAboutParkings';
 
 export const Parking = () => {
@@ -18,7 +17,6 @@ export const Parking = () => {
     <div>
       <AppHeaderBar/>
       <Breadcrumb location='/ Паркинги'/>
-      <ParkingsIframe/>
       <MoreAboutParkings/>
       <CityObject/>
       <Footer/>
